@@ -64,6 +64,9 @@ const handleChange = (name) => {
 
 	.content {
 		height: calc(100% - 46px);
+		box-sizing: border-box;
+		padding-bottom: 50px;
+		overflow-y: auto;
 	}
 
 	:deep(.van-nav-bar) {
@@ -90,18 +93,5 @@ const handleChange = (name) => {
 		}
 	}
 
-	// .nav-bar {
-	// 	background-color: #9ACD32;
-	// 	/* 莫兰迪绿 */
-	// 	color: white;
-	// 	border-bottom: none;
-	// }
-
-	// .tabbar {
-	// 	background-color: #6B8E23;
-	// 	/* 深莫兰迪绿 */
-	// 	color: white;
-	// 	border-top: none;
-	// }
 }
 </style>

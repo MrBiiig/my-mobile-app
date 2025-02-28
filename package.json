@@ -4,7 +4,9 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+    "generate-image-list": "node generate-image-list.js",
     "dev": "vite",
+    "start": "vite",
     "build": "vite build",
     "preview": "vite preview",
     "format": "prettier --write \"src/**/*.{js,jsx,ts,tsx,json,css,scss,less,html,vue}\"",
@@ -17,7 +19,8 @@
     "video.js": "^8.21.0",
     "vue": "^3.5.13",
     "vue-router": "^4.0.13",
-    "vue-video-player": "^6.0.0"
+    "vue-video-player": "^6.0.0",
+    "vue-waterfall-plugin-next": "^2.6.5"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^5.2.1",

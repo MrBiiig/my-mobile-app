@@ -1,0 +1,11 @@
+[build]
+  publish = "dist"  # 你的构建输出目录
+  functions = "netlify/functions"  # Functions 目录
+
+# [build.environment]
+  # NODE_VERSION = "16"  # 指定 Node.js 版本
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200

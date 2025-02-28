@@ -3,8 +3,6 @@ import BasicLayout from "../layouts/BasicLayout.vue";
 import Couple from "../views/Couple.vue";
 import Dog from "../views/Dog.vue";
 import Wedding from "../views/Wedding.vue";
-import Home from "../views/Home.vue";
-import Gallery from "../views/Gallery.vue";
 
 const routes = [
   {
