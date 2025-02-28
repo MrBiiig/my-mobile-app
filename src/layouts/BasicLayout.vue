@@ -6,7 +6,10 @@
 			</template>
 		</van-nav-bar>
 		<div class="content">
-			<router-view />
+			<keep-alive v-if="route.meta.keepAlive">
+				<router-view />
+			</keep-alive>
+			<router-view v-else />
 		</div>
 		<van-tabbar v-model="tabbarActive" v-if="!hideBottom" @change="handleChange">
 			<van-tabbar-item v-for="item in tabbarItems" :name="item.name" :icon="item.icon">

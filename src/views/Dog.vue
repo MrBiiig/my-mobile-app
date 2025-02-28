@@ -36,6 +36,10 @@ const previewImg = (item) => {
 onMounted(() => {
   imageList.value = [
     { url: "/.netlify/functions/proxy?url=https://s21.ax1x.com/2025/02/28/pE8KfDf.png" },
+    { url: "/.netlify/functions/proxy?url=https://s21.ax1x.com/2025/02/28/pE8Qo1s.png" },
+    { url: "/.netlify/functions/proxy?url=https://s21.ax1x.com/2025/02/28/pE8QIpj.png" },
+    { url: "/.netlify/functions/proxy?url=https://s21.ax1x.com/2025/02/28/pE8QTcn.png" },
+    { url: "/.netlify/functions/proxy?url=https://s21.ax1x.com/2025/02/28/pE8mzUH.png" },
   ]
 })
 </script>

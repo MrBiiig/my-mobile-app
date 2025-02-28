@@ -20,6 +20,8 @@ const routes = [
           hideTop: false,
           /* 隐藏底部标签栏 */
           hideBottom: false,
+          /* 是否缓存 */
+          keepAlive: true
         },
       },
       {
@@ -30,6 +32,7 @@ const routes = [
           title: "一狗",
           hideTop: false,
           hideBottom: false,
+          keepAlive: true
         },
       },
       {
