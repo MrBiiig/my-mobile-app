@@ -34,12 +34,9 @@ const previewImg = (item) => {
 }
 
 onMounted(() => {
-  const modules = import.meta.glob('/src/assets/imgs/dog/*.png');
-  imageList.value = Object.keys(modules).map((key, index) => {
-    return {
-      url: key,
-    };
-  });
+  imageList.value = [
+    { url: "/.netlify/functions/proxy?url=https://s21.ax1x.com/2025/02/28/pE8KfDf.png" },
+  ]
 })
 </script>
 

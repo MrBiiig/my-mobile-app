@@ -34,18 +34,31 @@ const previewImg = (item) => {
 }
 
 onMounted(() => {
-  // const modules = import.meta.glob('/src/assets/imgs/person/*.png');
-  // imageList.value = Object.keys(modules).map((key, index) => {
-  //   return {
-  //     url: key,
-  //   };
-  // });
+
   imageList.value = [
-    {
-      // url: "/imgs/2025/02/28/pE8Z2in.png"
-      url: "/.netlify/functions/proxy?url=https://s21.ax1x.com/2025/02/28/pE8Z2in.png"
-      // url: "https://s21.ax1x.com/2025/02/28/pE8Z2in.png"
-    }
+    { url: "/.netlify/functions/proxy?url=https://s21.ax1x.com/2025/02/28/pE8mOKK.png" },
+    { url: "/.netlify/functions/proxy?url=https://s21.ax1x.com/2025/02/28/pE8mqv6.png" },
+    { url: "/.netlify/functions/proxy?url=https://s21.ax1x.com/2025/02/28/pE8mbgx.png" },
+    { url: "/.netlify/functions/proxy?url=https://s21.ax1x.com/2025/02/28/pE8mH81.png" },
+    { url: "/.netlify/functions/proxy?url=https://s21.ax1x.com/2025/02/28/pE8m7CR.png" },
+    { url: "/.netlify/functions/proxy?url=https://s21.ax1x.com/2025/02/28/pE8mIUJ.png" },
+    { url: "/.netlify/functions/proxy?url=https://s21.ax1x.com/2025/02/28/pE8m5E4.png" },
+    { url: "/.netlify/functions/proxy?url=https://s21.ax1x.com/2025/02/28/pE8mhbF.png" },
+    { url: "/.netlify/functions/proxy?url=https://s21.ax1x.com/2025/02/28/pE8mfDU.png" },
+    { url: "/.netlify/functions/proxy?url=https://s21.ax1x.com/2025/02/28/pE8mWuT.png" },
+    { url: "/.netlify/functions/proxy?url=https://s21.ax1x.com/2025/02/28/pE8mgg0.png" },
+    { url: "/.netlify/functions/proxy?url=https://s21.ax1x.com/2025/02/28/pE8nKGn.png" },
+    { url: "/.netlify/functions/proxy?url=https://s21.ax1x.com/2025/02/28/pE8mc3q.png" },
+    { url: "/.netlify/functions/proxy?url=https://s21.ax1x.com/2025/02/28/pE8m6Cn.png" },
+    { url: "/.netlify/functions/proxy?url=https://s21.ax1x.com/2025/02/28/pE8ms4s.png" },
+    { url: "/.netlify/functions/proxy?url=https://s21.ax1x.com/2025/02/28/pE8mrNj.png" },
+    { url: "/.netlify/functions/proxy?url=https://s21.ax1x.com/2025/02/28/pE8nEqS.png" },
+    { url: "/.netlify/functions/proxy?url=https://s21.ax1x.com/2025/02/28/pE8nP2t.png" },
+    { url: "/.netlify/functions/proxy?url=https://s21.ax1x.com/2025/02/28/pE8nS5d.png" },
+    { url: "/.netlify/functions/proxy?url=https://s21.ax1x.com/2025/02/28/pE8mzUH.png" },
+    { url: "/.netlify/functions/proxy?url=https://s21.ax1x.com/2025/02/28/pE8mxVe.png" },
+    { url: "/.netlify/functions/proxy?url=https://s21.ax1x.com/2025/02/28/pE8mjbD.png" },
+    { url: "/.netlify/functions/proxy?url=https://s21.ax1x.com/2025/02/28/pE8mXDO.png" },
   ]
 })
 </script>
