@@ -9,6 +9,73 @@ body {
   height: 100%;
   margin: 0;
 }
+
+/* 覆盖vant主题色 */
+:root:root {
+  --van-black: #000;
+  --van-white: #fff;
+  --van-gray-1: #f0fdf4;
+  --van-gray-2: #e6f9e9;
+  --van-gray-3: #d9f2dc;
+  --van-gray-4: #c0e6c9;
+  --van-gray-5: #99d4a9;
+  --van-gray-6: #66c285;
+  --van-gray-7: #33b061;
+  --van-gray-8: #008f3f;
+  --van-red: #ee0a24;
+  --van-blue: #3fbf7f;
+  --van-orange: #5fd49f;
+  --van-orange-dark: #2fa56f;
+  --van-orange-light: #e6f9e9;
+  --van-green: #3fbf7f;
+  --van-gradient-red: linear-gradient(to right, #3fbf7f, #2fa56f);
+  --van-gradient-orange: linear-gradient(to right, #99d4a9, #66c285);
+  --van-primary-color: var(--van-green);
+  --van-success-color: var(--van-green);
+  --van-danger-color: #b00020;
+  --van-warning-color: #ffab00;
+  --van-text-color: var(--van-gray-8);
+  --van-text-color-2: var(--van-gray-6);
+  --van-text-color-3: var(--van-gray-5);
+  --van-active-color: var(--van-gray-2);
+  --van-active-opacity: 0.6;
+  --van-disabled-opacity: 0.5;
+  --van-background: var(--van-gray-1);
+  --van-background-2: var(--van-white);
+  --van-padding-base: 4px;
+  --van-padding-xs: 8px;
+  --van-padding-sm: 12px;
+  --van-padding-md: 16px;
+  --van-padding-lg: 24px;
+  --van-padding-xl: 32px;
+  --van-font-size-xs: 10px;
+  --van-font-size-sm: 12px;
+  --van-font-size-md: 14px;
+  --van-font-size-lg: 16px;
+  --van-font-bold: 600;
+  --van-line-height-xs: 14px;
+  --van-line-height-sm: 18px;
+  --van-line-height-md: 20px;
+  --van-line-height-lg: 22px;
+  --van-base-font:
+    -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Segoe UI,
+    Arial, Roboto, "PingFang SC", "miui", "Hiragino Sans GB", "Microsoft Yahei",
+    sans-serif;
+  --van-price-font:
+    Avenir-Heavy, PingFang SC, Helvetica Neue, Arial, sans-serif;
+  --van-duration-base: 0.3s;
+  --van-duration-fast: 0.2s;
+  --van-ease-out: ease-out;
+  --van-ease-in: ease-in;
+  --van-border-color: var(--van-gray-3);
+  --van-border-width: 1px;
+  --van-radius-sm: 2px;
+  --van-radius-md: 4px;
+  --van-radius-lg: 8px;
+  --van-radius-max: 999px;
+
+  --van-global-bg-color: #f0fdf4;
+}
 /* 
 
 莓果色系

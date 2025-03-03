@@ -10,10 +10,7 @@ export default defineConfig({
       '/.netlify/functions/proxy?url=https://s21.ax1x.com': {
         target: 'https://s21.ax1x.com',
         changeOrigin: true,
-        rewrite: (path) => {
-          console.log(path.replace(/^\/\.netlify\/functions\/proxy\?url=https:\/\/s21\.ax1x\.com/, ''))
-          return path.replace(/^\/\.netlify\/functions\/proxy\?url=https:\/\/s21\.ax1x\.com/, '')
-        },
+        rewrite: (path) => path.replace(/^\/\.netlify\/functions\/proxy\?url=https:\/\/s21\.ax1x\.com/, '')
       },
     },
   },

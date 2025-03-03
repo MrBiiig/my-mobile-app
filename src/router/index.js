@@ -17,7 +17,7 @@ const routes = [
         meta: {
           title: "两人",
           /* 隐藏顶部导航栏 */
-          hideTop: false,
+          hideTop: true,
           /* 隐藏底部标签栏 */
           hideBottom: false,
           /* 是否缓存 */
@@ -30,7 +30,7 @@ const routes = [
         component: Dog,
         meta: {
           title: "一狗",
-          hideTop: false,
+          hideTop: true,
           hideBottom: false,
           keepAlive: true
         },
@@ -41,7 +41,7 @@ const routes = [
         component: Wedding,
         meta: {
           title: "婚礼",
-          hideTop: false,
+          hideTop: true,
           hideBottom: false,
         },
       },

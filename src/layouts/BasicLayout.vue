@@ -5,7 +5,8 @@
 				<span>{{ title }}</span>
 			</template>
 		</van-nav-bar>
-		<div class="content">
+		<div class="content"
+			:style="{ height: hideTop ? '100%' : 'calc(100% - 46px)', paddingBottom: hideBottom ? '50px' : '50px' }">
 			<keep-alive v-if="route.meta.keepAlive">
 				<router-view />
 			</keep-alive>
@@ -63,36 +64,35 @@ const handleChange = (name) => {
 
 <style scoped lang="less">
 .container {
+	background-color: var(--van-global-bg-color);
 	height: 100%;
 
 	.content {
-		height: calc(100% - 46px);
 		box-sizing: border-box;
-		padding-bottom: 50px;
 		overflow-y: auto;
 	}
 
 	:deep(.van-nav-bar) {
-		background-color: #fff9e6;
-		box-shadow: 0 0 0 1px #ffdab9;
+		// background-color: #fff9e6;
+		// box-shadow: 0 0 0 1px #ffdab9;
 
 		.van-nav-bar__title {
-			color: #8c7a5b;
+			// color: #8c7a5b;
 		}
 	}
 
 	:deep(.van-tabbar) {
-		background-color: #fff9e6;
-		border-top: 1px solid #ffdab9;
+		// background-color: #fff9e6;
+		// border-top: 1px solid #ffdab9;
 
 		.van-tabbar-item {
-			color: #8c7a5b;
+			// color: #8c7a5b;
 		}
 
 		.van-tabbar-item.van-tabbar-item--active {
-			box-shadow: 0 0 0 1px #FFE4C4;
-			background-color: #FFE4C4;
-			color: #5C4A3B;
+			// box-shadow: 0 0 0 1px #FFE4C4;
+			// background-color: #FFE4C4;
+			// color: #5C4A3B;
 		}
 	}
 

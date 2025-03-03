@@ -4,7 +4,7 @@
       <template #default="{ item, index }">
         <div class="card" @click="previewImg(item)">
           <LazyImg :url="item.url" />
-          <p class="text">{{ index }}</p>
+          <p class="text"></p>
         </div>
       </template>
     </Waterfall>
