@@ -64,18 +64,32 @@ onMounted(async () => {
 
 
 	// 测试
-	wx.getLocation({
-		type: "gcj02", // 默认为'gcj02'，可以使用'gcj02', 'wgs84'，'bd09ll'等
+
+	wx.checkJsApi({
+		jsApiList: ['getLocation'],
 		success: function (res) {
-			latitude.value = res.latitude; // 纬度，浮点数
-			longitude.value = res.longitude; // 经度，浮点数
-		},
-		fail: function (error) {
-			alert("获取位置失败：", error)
-			console.error("获取位置失败：", error);
-			// 处理错误情况，比如提示用户授权位置信息
-		},
+			if (res.checkResult.getLocation) {
+				// 已授权，可以直接调用getLocation
+				wx.getLocation({
+					type: "gcj02", // 默认为'gcj02'，可以使用'gcj02', 'wgs84'，'bd09ll'等
+					success: function (res) {
+						latitude.value = res.latitude; // 纬度，浮点数
+						longitude.value = res.longitude; // 经度，浮点数
+					},
+					fail: function (error) {
+						alert("获取位置失败：", error)
+						console.error("获取位置失败：", error);
+						// 处理错误情况，比如提示用户授权位置信息
+					},
+				});
+			} else {
+				alert("未授权")
+				// 未授权，引导用户授权
+				// 这里可以展示一个按钮或者弹窗提示用户授权
+			}
+		}
 	});
+
 })
 </script>
 <style scoped lang="less"></style>
