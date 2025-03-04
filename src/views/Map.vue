@@ -1,5 +1,6 @@
 <template>
 	<div id="MapContainer" style="width: 100%; height: 100%;"></div>
+	<div>{{ "你当前的 纬度：" + latitude + ", 经度：" + longitude }}</div>
 </template>
 <script setup>
 import { ref, onMounted } from 'vue'
@@ -7,7 +8,12 @@ const location = [36.783954, 121.205125]
 
 const mapInstance = ref()
 
+const latitude = ref(0);
+const longitude = ref(0);
+
 onMounted(async () => {
+
+
 	mapInstance.value = new TMap.Map("MapContainer", {
 		minZoom: 8,
 		maxZoom: 22,
@@ -53,6 +59,22 @@ onMounted(async () => {
 
 
 		}]
+	});
+
+
+
+	// 测试
+	wx.getLocation({
+		type: "gcj02", // 默认为'gcj02'，可以使用'gcj02', 'wgs84'，'bd09ll'等
+		success: function (res) {
+			latitude.value = res.latitude; // 纬度，浮点数
+			longitude.value = res.longitude; // 经度，浮点数
+		},
+		fail: function (error) {
+			alert("获取位置失败：", error)
+			console.error("获取位置失败：", error);
+			// 处理错误情况，比如提示用户授权位置信息
+		},
 	});
 })
 </script>
