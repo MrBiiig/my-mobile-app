@@ -29,12 +29,16 @@
         <template #title>
         </template>
       </van-calendar>
+      <van-button type="primary" style="margin-top: 12px;" @click="() => { router.push('/map') }">婚礼地点</van-button>
     </div>
   </div>
 </template>
 
 <script setup>
 import { onMounted, ref } from 'vue'
+import { useRouter } from "vue-router";
+
+const router = useRouter();
 
 const time = ref(0);
 
@@ -53,6 +57,10 @@ onMounted(() => {
 </script>
 
 <style scoped lang="less">
+.wedding {
+  padding: 12px 0;
+}
+
 .count-down-wrapper {
   // padding: 12px;
 

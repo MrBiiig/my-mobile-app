@@ -3,6 +3,8 @@ import BasicLayout from "../layouts/BasicLayout.vue";
 import Couple from "../views/Couple.vue";
 import Dog from "../views/Dog.vue";
 import Wedding from "../views/Wedding.vue";
+import Test1 from "../views/Test1.vue";
+import Map from "../views/Map.vue";
 
 const routes = [
   {
@@ -46,6 +48,20 @@ const routes = [
         },
       },
     ]
+  },
+  {
+    path: "/test1",
+    name: "test1",
+    component: Test1,
+    meta: {
+    },
+  },
+  {
+    path: "/map",
+    name: "map",
+    component: Map,
+    meta: {
+    },
   },
   
 ];

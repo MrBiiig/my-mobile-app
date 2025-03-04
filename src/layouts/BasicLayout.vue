@@ -7,10 +7,7 @@
 		</van-nav-bar>
 		<div class="content"
 			:style="{ height: hideTop ? '100%' : 'calc(100% - 46px)', paddingBottom: hideBottom ? '50px' : '50px' }">
-			<keep-alive v-if="route.meta.keepAlive">
-				<router-view />
-			</keep-alive>
-			<router-view v-else />
+			<router-view />
 		</div>
 		<van-tabbar v-model="tabbarActive" v-if="!hideBottom" @change="handleChange">
 			<van-tabbar-item v-for="item in tabbarItems" :name="item.name" :icon="item.icon">
@@ -64,7 +61,6 @@ const handleChange = (name) => {
 
 <style scoped lang="less">
 .container {
-	background-color: var(--van-global-bg-color);
 	height: 100%;
 
 	.content {

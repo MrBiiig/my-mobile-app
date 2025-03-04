@@ -11,6 +11,7 @@
     "format:check": "prettier --check \"src/**/*.{js,jsx,ts,tsx,json,css,scss,less,html,vue}\""
   },
   "dependencies": {
+    "canvas-confetti": "^1.9.3",
     "less": "^4.2.2",
     "pinia": "^3.0.1",
     "vant": "^4.9.17",

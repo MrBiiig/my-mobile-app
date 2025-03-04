@@ -4,6 +4,7 @@
 html,
 body {
   height: 100%;
+  background-color: var(--van-global-bg-color);
 }
 #app {
   height: 100%;

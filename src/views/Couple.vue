@@ -1,6 +1,6 @@
 <template>
   <div class="couple">
-    <Waterfall :breakpoints="breakpoints" :list="imageList">
+    <Waterfall backgroundColor="transparent" :breakpoints="breakpoints" :list="imageList">
       <template #default="{ item, index }">
         <div class="card" @click="previewImg(item)">
           <LazyImg :url="item.url" />
