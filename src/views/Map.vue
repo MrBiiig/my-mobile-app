@@ -1,6 +1,7 @@
 <template>
 	<div id="MapContainer" style="width: 100%; height: 100%;"></div>
 	<div>{{ "你当前的 纬度：" + latitude + ", 经度：" + longitude }}</div>
+	<div>{{ showError }}</div>
 </template>
 <script setup>
 import { ref, onMounted } from 'vue'
@@ -10,6 +11,7 @@ const mapInstance = ref()
 
 const latitude = ref(0);
 const longitude = ref(0);
+const showError = ref();
 
 onMounted(async () => {
 
@@ -77,7 +79,8 @@ onMounted(async () => {
 						longitude.value = res.longitude; // 经度，浮点数
 					},
 					fail: function (error) {
-						alert("获取位置失败：", error)
+						alert("获取位置失败：", error);
+						showError.value = error
 						console.error("获取位置失败：", error);
 						// 处理错误情况，比如提示用户授权位置信息
 					},
