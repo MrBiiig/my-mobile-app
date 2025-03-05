@@ -1,7 +1,8 @@
 <template>
-	<div id="MapContainer" style="width: 100%; height: 100%;"></div>
 	<div>{{ "你当前的 纬度：" + latitude + ", 经度：" + longitude }}</div>
 	<div>{{ showError }}</div>
+	<div id="MapContainer" style="width: 100%; height: 100%;"></div>
+
 </template>
 <script setup>
 import { ref, onMounted } from 'vue'
